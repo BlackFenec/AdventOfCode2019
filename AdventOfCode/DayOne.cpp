@@ -27,7 +27,9 @@ int DayOne::FirstChallenge(std::string filename)
 
 int DayOne::ComputeEntireFuelForModule(int moduleMass)
 {
-	//TODO
+	int mass = ComputeFuelFromMass(moduleMass);
+	if (mass <= 0) return 0;
+	return mass + ComputeEntireFuelForModule(mass);
 }
 
 int DayOne::SecondChallenge(std::string filename)
