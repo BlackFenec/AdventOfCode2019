@@ -7,5 +7,6 @@ This is my attempt to complete my first advent of code. I'll do every challenge 
 
 1.B : December 3
 
-
 2.A : December 7
+
+2.B : December 8

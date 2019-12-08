@@ -6,8 +6,9 @@
 class DayTwo
 {
 public:
-	static std::string ExecuteProgram(std::string program);
-	static std::string FirstChallenge(std::string filename);
+	static std::string ExecuteProgram(std::string program, int firstPositionValue, int secondPositionValue);
+	static std::string FirstChallenge(std::string filename, int firstPositionValue, int secondPositionValue);
+	static int SecondChallenge(std::string filename, std::string expectedOutput);
 };
 
 #endif

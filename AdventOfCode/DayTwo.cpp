@@ -8,12 +8,18 @@
 #include <algorithm>
 #include <fstream>
 
-std::string DayTwo::ExecuteProgram(std::string program)
+std::string DayTwo::ExecuteProgram(std::string program, int firstPositionValue, int secondPositionValue)
 {
 	std::replace(program.begin(), program.end(), ',', ' ');
 	std::istringstream iss(program);
 	std::vector<int> instructions{ std::istream_iterator<int>{iss}, std::istream_iterator<int>{} };
+	
 	if (instructions.size() == 0) return program;
+	if (firstPositionValue != -1 && secondPositionValue != -1)
+	{
+		instructions[1] = firstPositionValue;
+		instructions[2] = secondPositionValue;
+	}
 
 	int pc = 0;
 	while (pc < instructions.size() && instructions.at(pc) != 99)
@@ -34,10 +40,25 @@ std::string DayTwo::ExecuteProgram(std::string program)
 		});
 }
 
-std::string DayTwo::FirstChallenge(std::string filename)
+std::string DayTwo::FirstChallenge(std::string filename, int firstPositionValue, int secondPositionValue)
 {
 	std::ifstream file(filename);
 	std::string program((std::istreambuf_iterator<char>(file)), std::istreambuf_iterator<char>());
-	program = ExecuteProgram(program);
+	program = ExecuteProgram(program, firstPositionValue, secondPositionValue);
 	return program.substr(0,program.find_first_of(','));
+}
+
+int DayTwo::SecondChallenge(std::string filename, std::string expectedOutput)
+{
+	std::ifstream file(filename);
+	std::string program((std::istreambuf_iterator<char>(file)), std::istreambuf_iterator<char>());
+	for (int noun = 99; noun >= 0; noun--)
+	{
+		for (int verb = noun; verb >= 0; verb--)
+		{
+			std::string result = ExecuteProgram(program, noun, verb);
+			if (result.substr(0, result.find_first_of(',')) == expectedOutput) return 100 * noun + verb;
+		}
+	}
+	return -1;
 }
