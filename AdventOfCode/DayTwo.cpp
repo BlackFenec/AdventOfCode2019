@@ -1,11 +1,9 @@
 #include "DayTwo.h"
-#include <string>
 #include <vector>
 #include <sstream>
 #include <algorithm>
 #include <iterator>
 #include <numeric>
-#include <algorithm>
 #include <fstream>
 
 std::string DayTwo::ExecuteProgram(std::string program, int firstPositionValue, int secondPositionValue)
