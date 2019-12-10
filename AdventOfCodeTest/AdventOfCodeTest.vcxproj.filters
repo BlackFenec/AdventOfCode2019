@@ -5,6 +5,7 @@
     <ClCompile Include="DayOneTest.cpp" />
     <ClCompile Include="DayTwoTest.cpp" />
     <ClCompile Include="DayThreeTest.cpp" />
+    <ClCompile Include="DayFourTest.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />

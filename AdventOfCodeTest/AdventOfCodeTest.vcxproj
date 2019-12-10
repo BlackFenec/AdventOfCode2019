@@ -36,6 +36,7 @@
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DayFourTest.cpp" />
     <ClCompile Include="DayOneTest.cpp" />
     <ClCompile Include="DayThreeTest.cpp" />
     <ClCompile Include="DayTwoTest.cpp" />
