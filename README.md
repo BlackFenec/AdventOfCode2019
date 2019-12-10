@@ -16,3 +16,5 @@ This is my attempt to complete my first advent of code. I'll do every challenge 
 3.B : December 8
 
 4.A : December 9
+
+4.B : December 9
