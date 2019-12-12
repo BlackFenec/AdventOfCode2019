@@ -6,6 +6,7 @@
     <ClCompile Include="DayTwoTest.cpp" />
     <ClCompile Include="DayThreeTest.cpp" />
     <ClCompile Include="DayFourTest.cpp" />
+    <ClCompile Include="DayFiveTest.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
@@ -26,6 +27,9 @@
       <Filter>inputs</Filter>
     </Text>
     <Text Include="DayThree.txt">
+      <Filter>inputs</Filter>
+    </Text>
+    <Text Include="DayFive.txt">
       <Filter>inputs</Filter>
     </Text>
   </ItemGroup>

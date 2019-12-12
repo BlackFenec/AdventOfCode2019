@@ -36,6 +36,7 @@
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DayFiveTest.cpp" />
     <ClCompile Include="DayFourTest.cpp" />
     <ClCompile Include="DayOneTest.cpp" />
     <ClCompile Include="DayThreeTest.cpp" />
@@ -56,6 +57,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="DayFive.txt" />
     <Text Include="DayThree.txt" />
     <Text Include="inputs\DayOne.txt">
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</DeploymentContent>
