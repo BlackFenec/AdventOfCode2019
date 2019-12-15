@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -154,15 +154,20 @@
     <ClCompile Include="DayFive.cpp" />
     <ClCompile Include="DayFour.cpp" />
     <ClCompile Include="DayOne.cpp" />
+    <ClCompile Include="DaySix.cpp" />
     <ClCompile Include="DayThree.cpp" />
     <ClCompile Include="DayTwo.cpp" />
+    <ClCompile Include="Tree.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DayFive.h" />
     <ClInclude Include="DayFour.h" />
     <ClInclude Include="DayOne.h" />
+    <ClInclude Include="DaySix.h" />
     <ClInclude Include="DayThree.h" />
     <ClInclude Include="DayTwo.h" />
+    <ClInclude Include="Node.h" />
+    <ClInclude Include="Tree.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

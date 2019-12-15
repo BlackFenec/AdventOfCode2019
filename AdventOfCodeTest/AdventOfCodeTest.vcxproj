@@ -39,6 +39,7 @@
     <ClCompile Include="DayFiveTest.cpp" />
     <ClCompile Include="DayFourTest.cpp" />
     <ClCompile Include="DayOneTest.cpp" />
+    <ClCompile Include="DaySixTest.cpp" />
     <ClCompile Include="DayThreeTest.cpp" />
     <ClCompile Include="DayTwoTest.cpp" />
     <ClCompile Include="pch.cpp">
@@ -63,6 +64,7 @@
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</DeploymentContent>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </Text>
+    <Text Include="inputs\DaySix.txt" />
     <Text Include="inputs\DayTwo.txt" />
   </ItemGroup>
   <ItemDefinitionGroup />
